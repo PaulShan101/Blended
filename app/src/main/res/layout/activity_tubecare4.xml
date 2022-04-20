@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.blended.TubeCare.TubeCare4">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tubehead1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:autoText="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="Positioning"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:autoText="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Positions for receiving tube feedings:\n
+Option 1: Propped up in bed or on a couch in a half sitting position with the head raised at least 30 degrees\n
+Option 2: Sitting up in a chair
+Never while lying flat"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
-            name="isAnimals"
+            name="isDiet"
             type="com.example.blended.DietData" />
 
 
@@ -15,6 +16,7 @@
         app:cardCornerRadius="5dp"
         >
         <LinearLayout
+
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -26,40 +28,67 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/dietImg"
-                    android:imageUrl="@{isAnimals.img}"
+                    android:imageUrl="@{isDiet.img}"
                     android:scaleType="centerCrop"
                     android:layout_width="140dp"
                     android:layout_height="140dp"/>
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="160dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/dietName"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:textStyle="bold|normal"
-                        android:layout_gravity="center"
-                        android:text="@{isAnimals.name}"
-                        android:layout_margin="10dp"
+
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="@{isDiet.name}"
+                        android:textSize="20sp"
+                        android:textStyle="bold|normal" />
 
                     <TextView
                         android:id="@+id/dietInfo"
-                        android:layout_width="match_parent"
-                        android:layout_height="61dp"
+
+                        android:layout_width="214dp"
+                        android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:gravity="center"
-                        android:text="@{isAnimals.info}"
-                        android:textColor="@android:color/darker_gray"
+                        android:text="@{isDiet.info}"
+
                         android:textSize="15sp"
                         android:textStyle="bold|normal" />
 
+                    <TextView
+                        android:id="@+id/dietDate"
 
+                        android:layout_width="214dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="@{isDiet.date}"
+
+                        android:textSize="15sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/dietCalories"
+
+                        android:layout_width="214dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="@{isDiet.calories}"
+
+                        android:textSize="15sp"
+                        android:textStyle="bold|normal" />
 
 
                 </LinearLayout>
